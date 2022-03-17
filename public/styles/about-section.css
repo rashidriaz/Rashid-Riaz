@@ -1,0 +1,109 @@
+#summary{
+    color: var(--paragraph-color);
+    font-weight: lighter;
+    font-size: medium;
+}
+#summary p{
+    margin: 0 1rem 2rem 0;
+    text-align: justify;
+}
+#what, #testimonials{
+    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+}
+.section-title{
+    margin-bottom: 1.5rem;
+    word-spacing: 0.2rem;
+}
+.skills, .skills ul{
+    column-gap: 2rem;
+    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.skills-list li{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 20px;
+    border: solid 1px var(--secondary-background-color);
+    box-shadow: -0.05rem -0.05rem var(--secondary-background-color);
+}
+.skills-list .skill-detail-box{
+    padding: 1rem 0.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+}
+.skills-list li .icon{
+    vertical-align: center;
+}
+.skills-list li .icon i{
+    color: var(--secondary-color);
+    font-size: 3rem;
+    vertical-align: center;
+}
+.skill-title, .client-name{
+    font-size: larger;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+.skill-description, .client-review{
+    color: var(--paragraph-color);
+    font-weight: lighter;
+    text-align: left;
+}
+
+.testimonials, .testimonial-list{
+    vertical-align: top;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 1rem 0.5rem;
+}
+.testimonial-list li{
+    padding: 1.5rem 2rem;
+    border: solid 0.02rem var(--secondary-background-color);
+    border-radius: 20px;
+    box-shadow: -0.05rem -0.05rem var(--secondary-background-color);
+    display: grid;
+    list-style: none;
+}
+.testimonial-detail-box{
+    height: 100%;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    position: relative;
+}
+.client-avatar{
+    margin-top: 1.5rem;
+    display: inline;
+    vertical-align: bottom;
+    height: 5rem;
+    width: 5rem;
+}
+.client-avatar img{
+    vertical-align: middle;
+    height: 5rem;
+    width: 5rem;
+    alignment: center;
+}
+.clients, .clients-list, li{
+    list-style: none;
+    vertical-align: middle;
+    display:inline;
+}
+.clients-list li {
+    margin-right: 4rem;
+}
+.clients-list li img{
+    height: 5rem;
+    width: 5rem;
+}
+
+

@@ -1,0 +1,129 @@
+#profile{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--main-background-color);
+    border: solid 1px var(--secondary-background-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+.section{
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    horiz-align: center;
+    text-align: center;
+}
+.profile-photo-block{
+    vertical-align: center;
+    align-content: center;
+    height: 12rem;
+    width: 12rem;
+    background-color: var(--secondary-background-color);
+    border-radius: 40px;
+    margin-bottom: 1rem;
+}
+.profile-photo-block img{
+    border-radius: 40px;
+    height: 12rem;
+    width: 12rem;
+}
+#profile .name-block{
+    align-content: center;
+    margin: 0.5rem 0;
+}
+#profile .name-block .name{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+#profile .contacts{
+    display: inline-block;
+    margin-right: 1.2rem;
+    margin-left: 0;
+    text-align: left;
+}
+#profile .profession{
+    margin: 1rem 0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    font-weight: lighter;
+    font-size: small;
+}
+#profile .section{
+    border-bottom: solid 2px var(--secondary-background-color);
+    margin-bottom: 2rem;
+}
+#profile .contacts .contact-details-list{
+    list-style: none;
+    display: grid;
+    column-gap: 0.1rem;
+}
+.contact-details-list li{
+
+    vertical-align: center;
+    margin: 1.5rem 0.2rem;
+}
+#profile .contacts .contact-details-list .icon-box{
+    horiz-align: left;
+    border: solid 0.001rem var(--secondary-background-color);
+    box-shadow: -0.005rem -0.005rem  var(--secondary-background-color);
+    border-radius: 5px;
+    vertical-align: center;
+    font-size: larger;
+    color: var(--secondary-color);
+    display: inline-block;
+    width: 10%;
+    padding: 0.5rem;
+}
+#profile .contact-details-list h1{
+    color: var(--heading-color);
+    font-weight: lighter;
+    font-size: small;
+}
+#profile .contact-details-list .contact-details p{
+    font-size: medium;
+    font-weight: lighter;
+    color: var(--paragraph-color);
+}
+.contact-details-list li .contact-details{
+    vertical-align: bottom;
+    margin-left: 1rem;
+    text-align: left;
+}
+#profile .contact-details-list .contact-details{
+    horiz-align: left;
+    display: inline-block;
+    width: 70%;
+}
+
+
+.social-icons{
+    display: inline-block;
+    margin: 1rem 0.5rem 0 0.5rem;
+}
+.social-icons .icons-list, .icons-list li{
+    align-content: center;
+    margin-bottom: 0;
+    display: inline;
+}
+.icons-list li{
+    align-content: center;
+    margin: 0 0.5rem;
+}
+.icons-list li i{
+    font-size: large;
+    color: var(--heading-color);
+}
+.icons-list li i:hover{
+    color: var(--main-font-color);
+}
+
