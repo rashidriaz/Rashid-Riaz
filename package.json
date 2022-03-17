@@ -1,5 +1,16 @@
 {
   "dependencies": {
+    "express": "^4.17.3",
     "jquery": "^3.6.0"
-  }
+  },
+  "name": "rashid-riaz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
