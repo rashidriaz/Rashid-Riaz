@@ -1,25 +1,25 @@
-.detail {
+#resume {
     flex: 1 0 0;
     padding: 2rem;
 }
-.detail:hover > .detail-section:not(:hover) {
+#resume:hover > .resume-section:not(:hover) {
     opacity: 0.3;
 }
-.detail-section {
+.resume-section {
     transition: all 0.3s;
 }
-.detail-section:not(:last-of-type) {
+.resume-section:not(:last-of-type) {
     padding-bottom: 1rem;
 }
-.detail-title {
+.resume-title {
     display: flex;
     align-items: center;
 }
-.detail-section > .detail-content {
+.resume-section > .detail-content {
     padding: 1.5rem 1.5rem 1.5rem 2rem;
     user-select: none;
 }
-.detail-section.edu > .detail-content {
+.resume-section.edu > .detail-content {
     padding-left: calc(1.5rem + 10px);
 }
 .title-icon + span {
@@ -44,11 +44,11 @@
     font-size: 1rem;
     text-align: center;
 }
-.detail-section:hover .title-icon {
+.resume-section:hover .title-icon {
     transform: scale(1.5);
     margin-right: 1.5rem;
 }
-.detail-section:hover .title-icon + span {
+.resume-section:hover .title-icon + span {
     letter-spacing: 0.1rem;
 }
 
@@ -192,9 +192,8 @@
     display: flex;
     flex: 1 0 0;
     align-items: center;
-    justify-content: baseline;
     flex-direction: column;
-    color: var(--profile-theme);
+    color: var(--heading-color);
     padding: 1rem 0;
     transition: all 0.3s;
 }
@@ -208,7 +207,7 @@
 }
 .favor-list > li:hover {
     transform: scale(1.2);
-    color: var(--color-tiffany);
+    color: var(--secondary-color);
 }
 .favor-list > li > span {
     letter-spacing: 1px;
@@ -216,10 +215,10 @@
 
 @keyframes circle {
     0% {
-        box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
+        box-shadow: 0 0 0 0 var(--secondary-background-color);
     }
     100% {
-        box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
+        box-shadow: 0 0 0 6px var(--secondary-background-color);
     }
 }
 
@@ -230,7 +229,7 @@
     .wrapper {
         flex-direction: column;
     }
-    .intro, .detail {
+    .intro, #resume {
         flex: 0 0 100%;
         box-shadow: none;
     }

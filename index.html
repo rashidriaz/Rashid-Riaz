@@ -5,14 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--   material icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
+    <!--    custom css-->
     <link type="text/css" rel="stylesheet" href="public/styles/index.css">
     <link type="text/css" rel="stylesheet" href="public/styles/resume.css">
     <link type="text/css" rel="stylesheet" href="public/styles/profile-section.css">
     <link type="text/css" rel="stylesheet" href="public/styles/details-section.css">
     <link type="text/css" rel="stylesheet" href="public/styles/about-section.css">
     <link type="text/css" rel="stylesheet" href="public/styles/section-visibility.css">
+    <link type="text/css" rel="stylesheet" href="public/styles/contact-section.css">
     <title>About me</title>
 </head>
 <body>
@@ -97,8 +101,7 @@
             <ul class="navbar-items">
                 <li id="first"><a data-id="1" class="active" href="#">About me</a></li>
                 <li><a data-id="2" href="#">Resume</a></li>
-                <li><a data-id="3" href="#">Portfolio</a></li>
-                <li id="last"><a data-id="4" href="#">Contact</a></li>
+                <li id="last"><a data-id="3" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -235,182 +238,207 @@
 
     </div>
     <div class="main-section" id="resume">
-        <div class="detail">
-            <div class="detail-section edu">
-                <div class="detail-title">
-                    <div class="title-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <span>Education</span>
+        <div class="resume-section edu">
+            <div class="detail-title">
+                <div class="title-icon">
+                    <i class="fas fa-user-graduate"></i>
                 </div>
-                <div class="detail-content">
-                    <div class="timeline-block">
-                        <h1>Department of Computer Science</h1>
-                        <p>LDA Modal High School</p>
-                        <time>2010 - 2017</time>
-                    </div>
-                    <div class="timeline-block">
-                        <h1>Intermediate in Computer Sciences - (with statistics)</h1>
-                        <p>Unique Group of Colleges</p>
-                        <time>2017 - 2019</time>
-                    </div>
-                    <div class="timeline-block">
-                        <h1>Department of Computer Sciences - Software Engineering</h1>
-                        <p>COMSATS University Islamabad, Lahore Campus</p>
-                        <time>2019 - 2023 (expected)</time>
-                    </div>
+                <span>Education</span>
+            </div>
+            <div class="detail-content">
+                <div class="timeline-block">
+                    <h1>Department of Computer Science</h1>
+                    <p>LDA Modal High School</p>
+                    <time>2010 - 2017</time>
+                </div>
+                <div class="timeline-block">
+                    <h1>Intermediate in Computer Sciences - (with statistics)</h1>
+                    <p>Unique Group of Colleges</p>
+                    <time>2017 - 2019</time>
+                </div>
+                <div class="timeline-block">
+                    <h1>Department of Computer Sciences - Software Engineering</h1>
+                    <p>COMSATS University Islamabad, Lahore Campus</p>
+                    <time>2019 - 2023 (expected)</time>
                 </div>
             </div>
-            <div class="detail-section pg-skill">
-                <div class="detail-title">
-                    <div class="title-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <span>Programming skills</span>
+        </div>
+        <div class="resume-section pg-skill">
+            <div class="detail-title">
+                <div class="title-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
-                <div class="detail-content">
-                    <ul class="pg-list">
-                        <li>
-                            <span>HTML5</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>CSS3</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Javascript</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 90%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>JQuery</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>NodeJS</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 75%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>ReactJS</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 65%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Dart</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 90%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Flutter</span>
-                            <div class="sb-skeleton">
-                                <div class="skill-bar" style="--pg-bar-length: 85%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <span>Programming skills</span>
             </div>
-            <div class="detail-section tool-skill">
-                <div class="detail-title">
-                    <div class="title-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <span>Development Tools</span>
+            <div class="detail-content">
+                <ul class="pg-list">
+                    <li>
+                        <span>HTML5</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 80%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>CSS3</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 80%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Javascript</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>JQuery</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 80%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>NodeJS</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 75%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>ReactJS</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 65%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Dart</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Flutter</span>
+                        <div class="sb-skeleton">
+                            <div class="skill-bar" style="--pg-bar-length: 85%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="resume-section tool-skill">
+            <div class="detail-title">
+                <div class="title-icon">
+                    <i class="fas fa-tools"></i>
                 </div>
-                <div class="detail-content">
-                    <ul class="tool-list">
-                        <li>
-                            <svg viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45"></circle>
-                                <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
-                            </svg>
-                            <span class="tl-name">Photoshop</span>
-                            <span class="tl-exp">60%</span>
-                        </li>
-                        <li>
-                            <svg viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45"></circle>
-                                <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.8"></circle>
-                            </svg>
-                            <span class="tl-name">Debugger</span>
-                            <span class="tl-exp">80%</span>
-                        </li>
-                        <li>
-                            <svg viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45"></circle>
-                                <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
-                            </svg>
-                            <span class="tl-name">Git</span>
-                            <span class="tl-exp">70%</span>
-                        </li>
-                        <li>
-                            <svg viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45"></circle>
-                                <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.74"></circle>
-                            </svg>
-                            <span class="tl-name">XCode</span>
-                            <span class="tl-exp">74%</span>
-                        </li>
-                    </ul>
-                </div>
+                <span>Development Tools</span>
+            </div>
+            <div class="detail-content">
+                <ul class="tool-list">
+                    <li>
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
+                        </svg>
+                        <span class="tl-name">Photoshop</span>
+                        <span class="tl-exp">60%</span>
+                    </li>
+                    <li>
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.8"></circle>
+                        </svg>
+                        <span class="tl-name">Debugger</span>
+                        <span class="tl-exp">80%</span>
+                    </li>
+                    <li>
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
+                        </svg>
+                        <span class="tl-name">Git</span>
+                        <span class="tl-exp">70%</span>
+                    </li>
+                    <li>
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.74"></circle>
+                        </svg>
+                        <span class="tl-name">XCode</span>
+                        <span class="tl-exp">74%</span>
+                    </li>
+                </ul>
+            </div>
 
-            </div>
-            <div class="detail-section interests">
-                <div class="detail-title">
-                    <div class="title-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <span>Interests</span>
+        </div>
+        <div class="resume-section interests">
+            <div class="detail-title">
+                <div class="title-icon">
+                    <i class="fas fa-heart"></i>
                 </div>
-                <div class="detail-content">
-                    <div class="outer-frame">
-                        <ul class="favor-list">
-                            <li>
-                                <i class="material-icons">camera</i>
-                                <span>Photography</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-paw"></i>
-                                <span>Pet</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-headphones"></i>
-                                <span>Music</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chalkboard-user"></i>
-                                <span>Self-learning</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-user-edit"></i>
-                                <span>Blog</span>
-                            </li>
-                        </ul>
-                    </div>
+                <span>Interests</span>
+            </div>
+            <div class="detail-content">
+                <div class="outer-frame">
+                    <ul class="favor-list">
+                        <li>
+                            <i class="material-icons">camera</i>
+                            <span>Photography</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-paw"></i>
+                            <span>Pet</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Music</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span>Self-learning</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-edit"></i>
+                            <span>Blog</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="main-section" id="portfolio">
-    </div>
     <div class="main-section" id="contact">
+        <div class="contact-section">
+            <iframe id="map"
+                    src="https://api.mapbox.com/styles/v1/rashidriaz/cl0wgvh2u008314oeqbdsrzon.html?title=false&access_token=pk.eyJ1IjoicmFzaGlkcmlheiIsImEiOiJja3RldmNrdGkwMjk3Mm9udWZkeXF2eXh2In0.oWdSJ4REhC-OQzYOoV244A&zoomwheel=false#15/31.401333369316628/74.21165377109118"
+                    title="My Location"></iframe>
+        </div>
+        <div class="contact-section">
+            <h2 class="section-title">Send me a message</h2>
+
+            <form action="mailto:fa19-bse-081@cuilahore.edu.pk" method="post" enctype="text/plain">
+                <div id="personal-info">
+                    <input type="text" name="name" placeholder="name" class="input-field" required>
+                    <input type="text" name="email" placeholder="email" class="input-field" required>
+                </div>
+                <div class="message">
+                    <textarea name="comment" placeholder="Your message"
+                              class="input-field messageBox" rows="3" maxlength="200"
+                              required></textarea>
+                </div>
+                <div class="submit-button">
+                    <div></div>
+                <button type="submit" class="button">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+
+            </form>
+        </div>
     </div>
 </div>
 
-
+<!--custom js-->
 <script src="public/js/index.js"></script>
+<!--font awesome-->
 <script src="https://kit.fontawesome.com/177e96edab.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
