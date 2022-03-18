@@ -62,3 +62,6 @@ header{
 .navbar li a:hover{
     color: var(--secondary-color);
 }
+.navbar li a.active{
+    color: var(--secondary-color);
+}
