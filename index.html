@@ -13,6 +13,7 @@
     <link type="text/css" rel="stylesheet" href="/styles/details-section.css">
     <link type="text/css" rel="stylesheet" href="/styles/about-section.css">
     <link type="text/css" rel="stylesheet" href="/styles/section-visibility.css">
+    <link type="text/css" rel="stylesheet" href="/styles/contact-section.css">
     <title>About me</title>
 </head>
 <body>
@@ -97,8 +98,7 @@
             <ul class="navbar-items">
                 <li id="first"><a data-id="1" class="active" href="#">About me</a></li>
                 <li><a data-id="2" href="#">Resume</a></li>
-                <li><a data-id="3" href="#">Portfolio</a></li>
-                <li id="last"><a data-id="4" href="#">Contact</a></li>
+                <li id="last"><a data-id="3" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -402,9 +402,34 @@
             </div>
         </div>
     </div>
-    <div class="main-section" id="portfolio">
-    </div>
     <div class="main-section" id="contact">
+        <div class="contact-section">
+            <iframe id="map"
+                    src="https://api.mapbox.com/styles/v1/rashidriaz/cl0wgvh2u008314oeqbdsrzon.html?title=false&access_token=pk.eyJ1IjoicmFzaGlkcmlheiIsImEiOiJja3RldmNrdGkwMjk3Mm9udWZkeXF2eXh2In0.oWdSJ4REhC-OQzYOoV244A&zoomwheel=false#15/31.401333369316628/74.21165377109118"
+                    title="My Location"></iframe>
+        </div>
+        <div class="contact-section">
+            <h2 class="section-title">Send me a message</h2>
+
+            <form action="mailto:fa19-bse-081@cuilahore.edu.pk" method="post" enctype="text/plain">
+                <div id="personal-info">
+                    <input type="text" name="name" placeholder="name" class="input-field" required>
+                    <input type="text" name="email" placeholder="email" class="input-field" required>
+                </div>
+                <div class="message">
+                    <textarea name="comment" placeholder="Your message"
+                              class="input-field messageBox" rows="3" maxlength="200"
+                              required></textarea>
+                </div>
+                <div class="submit-button">
+                    <div></div>
+                    <button type="submit" class="button">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+
+            </form>
+        </div>
     </div>
 </div>
 

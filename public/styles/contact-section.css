@@ -1,0 +1,69 @@
+#contact{
+    flex: 1 0 0;
+    margin: 0;
+    padding: 1rem;
+
+}
+.contact-section{
+    margin: 1rem 0 2rem 0;
+}
+#map{
+    display: block;
+    text-align: center;
+    horiz-align: center;
+    width: 100%;
+    height: 25rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: -0.05rem -0.05rem 0.01rem 0.01rem var(--secondary-background-color);
+}
+.contact-section form #personal-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    margin: 1.5rem 0.5rem;
+}
+.contact-section form .input-field{
+    display: inline-block;
+    font-size: large;
+    background-color: var(--main-background-color);
+    border: solid 0.1rem var(--secondary-background-color);
+    box-shadow: 0 0 var(--secondary-background-color);
+    padding: 1.2rem 1rem;
+    text-align: justify-all;
+    color: var(--paragraph-color);
+    border-radius: 0.7rem;
+}
+.message{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 1.5rem 0.5rem;
+}
+.messageBox{
+    resize: none;
+    font-family: var(--font-family);
+}
+.contact-section form .button i{
+    padding-left: 0.3rem;
+    color: var(--secondary-color);
+    font-size: larger;
+}
+
+.submit-button{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 1.5rem 0.5rem;
+}
+.submit-button button{
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem 0.5rem;
+    font-size: larger;
+    color: var(--secondary-color);
+    background-color: var(--main-background-color);
+    border: solid 0.05rem var(--secondary-background-color);
+    box-shadow: -0.05rem -0.05rem var(--secondary-background-color);
+    border-radius: 1.5rem;
+    font-weight: lighter;
+
+}
