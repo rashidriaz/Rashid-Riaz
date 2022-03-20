@@ -16,6 +16,7 @@
     word-spacing: 0.2rem;
 }
 .skills-list{
+    padding: 1rem 0.5rem;
     column-gap: 1rem;
     row-gap: 1rem;
     display: grid;
