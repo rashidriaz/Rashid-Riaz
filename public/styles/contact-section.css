@@ -6,6 +6,7 @@
 }
 .contact-section{
     margin: 1rem 0 2rem 0;
+    position: relative;
 }
 #map{
     display: block;
@@ -25,7 +26,7 @@
 }
 .contact-section form .input-field{
     display: inline-block;
-    font-size: large;
+    font-size: var(--h3-font-size);
     background-color: var(--main-background-color);
     border: solid 0.1rem var(--secondary-background-color);
     box-shadow: 0 0 var(--secondary-background-color);
@@ -33,6 +34,7 @@
     text-align: justify-all;
     color: var(--paragraph-color);
     border-radius: 0.7rem;
+    margin-bottom: 1rem;
 }
 .message{
     display: grid;
@@ -48,17 +50,18 @@ resize: none;
     color: var(--secondary-color);
     font-size: larger;
 }
-
 .submit-button{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    margin: 1.5rem 0.5rem;
+
+    display: block;
+    text-align: right;
 }
 .submit-button button{
+    width: 20%;
+    alignment: right;
     cursor: pointer;
     display: inline-block;
     padding: 1.5rem 0.5rem;
-    font-size: larger;
+    font-size: var(--h4-font-size);
     color: var(--secondary-color);
     background-color: var(--main-background-color);
     border: solid 0.05rem var(--secondary-background-color);
@@ -66,4 +69,34 @@ resize: none;
     border-radius: 1.5rem;
     font-weight: lighter;
 
+}
+.submit-button button:hover{
+    background-color: var(--body-background-color);
+    border: solid 0.05rem var(--secondary-color);
+}
+.submit-button button:active{
+    border: solid 0.1rem var(--secondary-background-color);
+    box-shadow: 0 0 var(--secondary-background-color);
+}
+@media screen and (max-width: 400px) {
+    .contact-section form #personal-info{
+        display: block;
+    }
+    .contact-section form .input-field{
+        display: block;
+        width: 90%;
+        font-size: var(--h5-font-size);
+        background-color: var(--main-background-color);
+        border: solid 0.1rem var(--secondary-background-color);
+        box-shadow: 0 0 var(--secondary-background-color);
+        padding: 1.2rem 1rem;
+        text-align: justify-all;
+        color: var(--paragraph-color);
+        border-radius: 0.7rem;
+        margin: 0.5rem 1rem 0.5rem 0;
+    }
+    .submit-button button{
+        font-size: var(--h5-font-size);
+        width: 40%;
+    }
 }

@@ -3,15 +3,13 @@
     border: solid 1px var(--secondary-background-color);
     border-radius: 20px;
     padding: 5rem 1rem 0 1rem;
-    vertical-align: top;
-    width: 70%;
-    display: inline-block;
-    margin-left: 2rem;
+    display: block;
     position: relative;
+    grid-row: 1/span 2;
 }
 header{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% auto;
     margin: 0.5rem 0.5rem 2rem 0.5rem
 }
 .navbar-items{
@@ -22,7 +20,8 @@ header{
 
 }
 #content-title{
-    position: relative;
+    position: absolute;
+    top: 2rem;
 
 }
 
@@ -49,12 +48,9 @@ header{
 .navbar #first{
     margin-left: -2.5rem;
 }
-.navbar #last{
-    margin-right: 0;
-}
 .navbar li a{
     font-weight: normal;
-    font-size: medium;
+    font-size: var(--h4-font-size);
     color: var(--paragraph-color);
 
 }
@@ -63,4 +59,15 @@ header{
 }
 .navbar li a.active{
     color: var(--secondary-color);
+}
+
+
+@media screen and (max-width: 400px) {
+    #content-title{
+        position: relative;
+        top: 0;
+    }
+    .details{
+        margin-top: 1rem;
+    }
 }

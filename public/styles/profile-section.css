@@ -7,125 +7,125 @@
     border-radius: 20px;
     padding: 1.5rem;
     vertical-align: top;
-    width: 20%;
-    display: inline-block;
-    align-content: center;
-    text-align: center;
-}
+    grid-row: 1;
 
+}
 .section{
-    display: inline-block;
-    align-content: center;
-    align-items: center;
-    horiz-align: center;
-    text-align: center;
+    height: 45%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 68% 10% 10%;
+    row-gap: 1rem;
+    border-bottom: solid 1px var(--secondary-background-color);
+    margin-bottom: 2rem;
 }
 .profile-photo-block{
     text-align: center;
-    height: 12rem;
-    width: 12rem;
+    width: 100%;
     background-color: var(--main-background-color);
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: -0.02rem -0.02rem 0.01rem 0.01rem var(--secondary-background-color);
-    margin-bottom: 1rem;
+    horiz-align: center;
 }
 .profile-photo-block img{
-    object-fit: scale-down;
-    border-radius: 1rem;
+    object-fit: fill;
+    border-radius: 2rem;
     height: 100%;
     width: 100%;
 
 }
 #profile .name-block{
     align-content: center;
-    margin: 0.5rem 0;
 }
 #profile .name-block .name{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: var(--h1-font-size);
     font-weight: 400;
 }
-#profile .contacts{
-    display: inline-block;
-    margin-right: 1.2rem;
-    margin-left: 0;
-    text-align: left;
-}
 #profile .profession{
-    margin: 1rem 0;
     display: inline-block;
-    padding: 0.5rem 1rem;
     background-color: var(--secondary-background-color);
     border-radius: 10px;
     font-weight: lighter;
-    font-size: small;
+    font-size: var(--h5-font-size);
+    text-align: center;
 }
-#profile .section{
-    border-bottom: solid 2px var(--secondary-background-color);
-    margin-bottom: 2rem;
+#profile .profession p{
+    margin-top: 0.5rem;
+}
+
+#profile .contacts{
+    width: 100%;
+    display: block;
 }
 #profile .contacts .contact-details-list{
-    list-style: none;
+    padding:0;
+    list-style-type: none;
     display: grid;
     column-gap: 0.1rem;
 }
 .contact-details-list li{
-
+    display: grid;
+    grid-template-columns: 10% auto;
+    column-gap: 1rem;
     vertical-align: center;
     margin: 1.5rem 0.2rem;
 }
 #profile .contacts .contact-details-list .icon-box{
-    horiz-align: left;
-    border: solid 0.001rem var(--secondary-background-color);
-    box-shadow: -0.005rem -0.005rem  var(--secondary-background-color);
+    horiz-align: center;
+    text-align: center;
+    box-shadow: -0.05rem -0.05rem  var(--secondary-background-color);
+    padding: 0 0.2rem 0 0.25rem;
     border-radius: 5px;
     vertical-align: center;
     font-size: larger;
     color: var(--secondary-color);
-    display: inline-block;
-    width: 10%;
-    padding: 0.5rem;
+    display: inline;
+}
+.icon-box i{
+    margin-top: 0.5rem;
 }
 #profile .contact-details-list h1{
     color: var(--heading-color);
     font-weight: lighter;
-    font-size: small;
+    font-size: var(--h6-font-size);
 }
 #profile .contact-details-list .contact-details p{
-    font-size: medium;
+    font-size: var(--h4-font-size);
     font-weight: lighter;
     color: var(--paragraph-color);
 }
-.contact-details-list li .contact-details{
-    vertical-align: bottom;
-    margin-left: 1rem;
-    text-align: left;
-}
-#profile .contact-details-list .contact-details{
-    horiz-align: left;
-    display: inline-block;
-    width: 70%;
-}
-
 
 .social-icons{
-    display: inline-block;
-    margin: 1rem 0.5rem 0 0.5rem;
+    display: block;
+    horiz-align: center;
+    text-align: center;
 }
-.social-icons .icons-list, .icons-list li{
-    align-content: center;
-    margin-bottom: 0;
-    display: inline;
+.icons-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0;
+    list-style-type: none;
 }
-.icons-list li{
-    align-content: center;
-    margin: 0 0.5rem;
-}
+
 .icons-list li i{
-    font-size: large;
+    font-size: var(--h3-font-size);
     color: var(--heading-color);
 }
+
 .icons-list li i:hover{
     color: var(--main-font-color);
 }
 
+@media screen and (max-width: 600px) {
+    #profile{
+        position: relative;
+    }
+    .profile-photo-block img{
+        object-fit: scale-down;
+
+    }
+    #profile .profession p{
+        margin-top: 1rem;
+    }
+}

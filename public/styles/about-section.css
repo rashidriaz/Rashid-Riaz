@@ -1,7 +1,7 @@
 #summary{
     color: var(--paragraph-color);
     font-weight: lighter;
-    font-size: medium;
+    font-size: var(--h4-font-size);
 }
 #summary p{
     margin: 0 1rem 2rem 0;
@@ -15,9 +15,9 @@
     margin-bottom: 1.5rem;
     word-spacing: 0.2rem;
 }
-.skills, .skills ul{
-    column-gap: 2rem;
-    row-gap: 2rem;
+.skills-list{
+    column-gap: 1rem;
+    row-gap: 1rem;
     display: grid;
     grid-template-columns: auto auto;
 
@@ -53,15 +53,15 @@
 .skill-description, .client-review{
     color: var(--paragraph-color);
     font-weight: lighter;
-    text-align: left;
+    text-align: justify;
 }
 
-.testimonials, .testimonial-list{
+.testimonial-list{
     vertical-align: top;
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
     padding: 1rem 0.5rem;
 }
 .testimonial-list li{
@@ -104,6 +104,21 @@
 .clients-list li img{
     height: 5rem;
     width: 5rem;
+}
+
+@media screen and (max-width: 400px) {
+    .skills-list{
+        display: block;
+    }
+    .skills-list li{
+        margin-bottom: 1rem;
+    }
+    .testimonial-list{
+        display: block;
+    }
+    .testimonial-list li{
+        margin-bottom: 1rem;
+    }
 }
 
 
